@@ -311,7 +311,7 @@ def apply_filter(image):
 
             # Put the angle on the image
             cv2.putText(da, f"score: {score:} ", ( 15, 15+z),
-                        cv2.FONT_HERSHEY_SIMPLEX, 1.4, (255, 25, 0), 4)
+                        cv2.FONT_HERSHEY_SIMPLEX, 1.4, (0, 255, 250), 4)
             scoress.append(score)
             z+=30
             # Calculate the length of the line
