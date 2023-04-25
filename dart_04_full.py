@@ -295,14 +295,14 @@ def apply_filter(image):
         if linee >232 and linee <264:#<272:
 
             score =score *3
-        elif linee>362 and linee <380:
+        elif linee>390 and linee <400:
             score=score*2
         elif linee >25 and linee <39:
             score =25
         elif linee <22 :
             score =50
 
-        if (linee) < 380:
+        if (linee) < 430:
 
             cv2.line(img, center, (x,y), (255, 255, 0), 2)
             # Draw the point
