@@ -257,7 +257,7 @@ def apply_filter(image):
         elif angle <=9.5  or angle >= 351:
        
             score = 6
-        elif angle >= 333.5 and angle <= 352:
+        elif angle >= 332.5 and angle <= 352:
             score = 10
 
         elif angle >= 297 and angle <=314:
