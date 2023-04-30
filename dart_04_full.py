@@ -103,7 +103,7 @@ def apply_filter(image):
     image=image-mas
 
     hsv=cv2.cvtColor(image,cv2.COLOR_BGR2HSV)
-    lower_white = np.array([0, 0, 155])
+    lower_white = np.array([0, 0, 170])
     upper_white = np.array([170, 35, 255])
 
     # Threshold the image to get only white colors
