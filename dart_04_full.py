@@ -103,7 +103,7 @@ def apply_filter(image):
     image=image-mas
 
     hsv=cv2.cvtColor(image,cv2.COLOR_BGR2HSV)
-    lower_white = np.array([0, 0, 175])
+    lower_white = np.array([0, 0, 155])
     upper_white = np.array([170, 35, 255])
 
     # Threshold the image to get only white colors
@@ -250,14 +250,14 @@ def apply_filter(image):
             score = 1
         elif angle >= 43 and angle <=62:
             score = 18
-        elif angle >= 27 and angle <=44:
+        elif angle >= 26.5 and angle <=44:
             score = 4
         elif angle >=9.6 and angle <= 26:
             score = 13
         elif angle <=9.5  or angle >= 351:
        
             score = 6
-        elif angle >= 333 and angle <= 352:
+        elif angle >= 333.5 and angle <= 352:
             score = 10
 
         elif angle >= 297 and angle <=314:
@@ -292,17 +292,17 @@ def apply_filter(image):
         # Calculate the length of the line
         # line_length = ((x - center[0])**2 + (y - center[1])**2)**0.5
     #     linee=round(line_length)
-        if linee >232 and linee <264:#<272:
+        if linee >232 and linee <262:#<272:
 
             score =score *3
         elif linee>390 and linee <400:
             score=score*2
-        elif linee >25 and linee <39:
+        elif linee >20 and linee <54.2:
             score =25
-        elif linee <22 :
+        elif linee <20 :
             score =50
 
-        if (linee) < 430:
+        if (linee) < 418:
 
             cv2.line(img, center, (x,y), (255, 255, 0), 2)
             # Draw the point
